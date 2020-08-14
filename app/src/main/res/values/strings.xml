@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mis Mapas</string>
+    <string name="abrir_mapa">Abrir mapa</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="la_catedral">La Catedral</string>
+    <string name="lugares_turisticos_ecuador">LUGARES TURISTICOS EN ECUADOR</string>
+    <string name="parque_la_familia">Parque La Familia</string>
+    <string name="ba_os">Baños</string>
+    <string name="mitad_del_mundo">Mitad del Mundo</string>
+</resources>

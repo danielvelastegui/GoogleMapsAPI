@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingStart="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lugares_turisticos_ecuador"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="startLugarUno">
+
+                <ImageView
+                    android:id="@+id/imgLugarUno"
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_catedral" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvLugarUno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/la_catedral"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:orientation="vertical"
+                android:onClick="startLugarDos">
+
+                <ImageView
+                    android:id="@+id/imgLugarDos"
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_parque" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvLugarDos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parque_la_familia"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="startLugarTres">
+
+                <ImageView
+                    android:id="@+id/imgLugarTres"
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_banos" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvLugarTres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ba_os"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:orientation="vertical"
+                android:onClick="startLugarCuatro">
+
+                <ImageView
+                    android:id="@+id/imgLugarCuatro"
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:src="@drawable/ic_mitad_mundo" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/tvLugarCuatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mitad_del_mundo"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
